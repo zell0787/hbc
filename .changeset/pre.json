@@ -1,0 +1,11 @@
+{
+  "mode": "pre",
+  "tag": "alpha",
+  "initialVersions": {
+    "create-hbc": "0.1.0",
+    "hbc-core": "0.1.0"
+  },
+  "changesets": [
+    "thirty-rabbits-develop"
+  ]
+}
