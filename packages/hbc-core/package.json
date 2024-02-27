@@ -1,7 +1,7 @@
 {
   "name": "hbc-core",
   "version": "0.1.1-alpha.0",
-  "description": "hbc-core",
+  "description": "基于umi的前端工程化解决方案",
   "bin": {
     "hbc": "bin/hbc.js"
   },
