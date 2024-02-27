@@ -1,0 +1,25 @@
+{
+  "name": "hbc-core",
+  "version": "0.1.0",
+  "description": "hbc-core",
+  "bin": {
+    "hbc": "bin/hbc.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pnpm tsc"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "zell",
+  "license": "MIT",
+  "dependencies": {
+    "@umijs/utils": "^4.1.2",
+    "umi": "4.1.2"
+  }
+}

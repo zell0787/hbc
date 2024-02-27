@@ -1,0 +1,25 @@
+{
+  "name": "create-hbc",
+  "version": "0.1.0",
+  "description": "创建hbc前端项目脚手架",
+  "bin": {
+    "create-hbc": "bin/create-hbc.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "scripts": {
+    "build": "pnpm tsc"
+  },
+  "dependencies": {
+    "@umijs/utils": "~4.1.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "zell",
+  "license": "MIT"
+}
