@@ -7,7 +7,8 @@
     "build": "hbc build"
   },
   "dependencies": {
-    "hbc-core": "{{{ version }}}"
+    "hbc-core": "{{{ version }}}",
+    "antd": "^5.14.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.33",
