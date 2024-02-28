@@ -1,25 +1,26 @@
 {
   "name": "hbc-core",
   "version": "0.1.1-alpha.0",
-  "description": "基于umi的前端工程化解决方案",
+  "description": "hbc",
   "bin": {
     "hbc": "bin/hbc.js"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
+    "bin",
     "dist"
   ],
   "scripts": {
     "build": "pnpm tsc"
   },
+  "dependencies": {
+    "@umijs/utils": "^4.1.2",
+    "umi": "4.1.2"
+  },
   "publishConfig": {
     "access": "public"
   },
   "author": "zell",
-  "license": "MIT",
-  "dependencies": {
-    "@umijs/utils": "^4.1.2",
-    "umi": "4.1.2"
-  }
+  "license": "MIT"
 }

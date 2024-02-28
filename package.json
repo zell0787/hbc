@@ -4,12 +4,17 @@
     "packages/*"
   ],
   "description": "一个基于Umi4的前端react框架",
-  "author": "zell",
-  "license": "MIT",
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
     "@types/node": "^20.11.20",
     "prettier": "^3.2.5",
     "typescript": "^5.3.3"
-  }
+  },
+  "packageManager": "pnpm@8.11.0",
+  "engines": {
+    "node": ">=14",
+    "pnpm": "^8.11.0"
+  },
+  "author": "zell",
+  "license": "MIT"
 }
