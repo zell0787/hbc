@@ -1,4 +1,4 @@
-import { Link, Outlet } from 'umi';
+import { Link, Outlet } from 'hbc-core';
 import styles from './index.less';
 
 export default function Layout() {
@@ -10,9 +10,6 @@ export default function Layout() {
         </li>
         <li>
           <Link to="/docs">Docs</Link>
-        </li>
-        <li>
-          <a href="https://github.com/umijs/umi">Github</a>
         </li>
       </ul>
       <Outlet />

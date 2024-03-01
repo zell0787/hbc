@@ -1,15 +1,9 @@
-import yayJpg from '../assets/yay.jpg';
+import Guide from '@/components/Guide';
+import { trim } from '@/utils/format';
+import { DEFAULT_NAME } from '@/constants';
 
-export default function HomePage() {
-  return (
-    <div>
-      <h2>Yay! Welcome to umi!</h2>
-      <p>
-        <img src={yayJpg} width="388" />
-      </p>
-      <p>
-        To get started, edit <code>pages/index.tsx</code> and save to reload.
-      </p>
-    </div>
-  );
-}
+const HomePage: React.FC = () => {
+  return <Guide name={trim(DEFAULT_NAME)} />;
+};
+
+export default HomePage;

@@ -6,6 +6,7 @@
     "hbc-core": "0.1.0"
   },
   "changesets": [
+    "great-bees-carry",
     "small-insects-pull",
     "thirty-rabbits-develop"
   ]
