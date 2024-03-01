@@ -1,6 +1,6 @@
 {
   "name": "create-hbc",
-  "version": "0.1.1-alpha.2",
+  "version": "0.1.1-alpha.3",
   "description": "创建hbc前端项目脚手架",
   "bin": {
     "create-hbc": "bin/create-hbc.js"
