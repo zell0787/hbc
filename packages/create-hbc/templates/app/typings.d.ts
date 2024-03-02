@@ -1,1 +1,1 @@
-import 'umi/typings';
+import 'hbc-core/typings';
