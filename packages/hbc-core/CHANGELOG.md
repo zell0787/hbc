@@ -1,5 +1,11 @@
 # hbc-core
 
+## 0.1.1-alpha.4
+
+### Patch Changes
+
+- alpha.4
+
 ## 0.1.1-alpha.3
 
 ### Patch Changes
