@@ -1,1 +1,6 @@
-module.exports = require('umi/prettier');
+const prettierSettings = require('umi/prettier');
+
+module.exports = {
+  ...prettierSettings,
+  organizeImportsSkipDestructiveCodeActions: true,
+};
