@@ -45,7 +45,6 @@ export default async ({ cwd, args }: GeneratorOpts) => {
     },
   });
   await generator.run();
-  installWithNpmClient({ npmClient: 'pnpm', cwd: target });
 
   const context: IContext = {
     projectRoot: target,
@@ -57,6 +56,9 @@ export default async ({ cwd, args }: GeneratorOpts) => {
   } else {
     logger.info(`Skip Git init`);
   }
+
+  // install deps
+  installWithNpmClient({ npmClient: 'pnpm', cwd: target });
 };
 
 async function initGit(opts: IContext) {
