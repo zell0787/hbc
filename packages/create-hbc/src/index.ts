@@ -58,7 +58,11 @@ export default async ({ cwd, args }: GeneratorOpts) => {
   }
 
   // install deps
-  installWithNpmClient({ npmClient: 'pnpm', cwd: target });
+  if (args.install !== false) {
+    installWithNpmClient({ npmClient: 'pnpm', cwd: target });
+  } else {
+    logger.info(`Skip install deps`);
+  }
 };
 
 async function initGit(opts: IContext) {
