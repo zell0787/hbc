@@ -29,6 +29,9 @@ export default async ({ cwd, args }: GeneratorOpts) => {
   const author = email && username ? `${username} <${email}>` : '';
   const target = name ? join(cwd, name) : cwd;
   const version = pkg.version;
+  const base = '/hbc/';
+  const publicPath = '/hbc/';
+  const appId = 'hbc';
 
   // git
   const shouldInitGit = args.git !== false;
@@ -38,6 +41,9 @@ export default async ({ cwd, args }: GeneratorOpts) => {
     target: name ? join(cwd, name) : cwd,
     data: {
       version,
+      base,
+      publicPath,
+      appId,
       npmClient,
       registry,
       author,
