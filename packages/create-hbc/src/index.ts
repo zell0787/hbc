@@ -5,6 +5,8 @@ import {
   getGitInfo,
   execa,
   logger,
+  clackPrompts,
+  chalk,
 } from '@umijs/utils';
 import { existsSync } from 'fs';
 import { join } from 'path';
@@ -29,9 +31,80 @@ export default async ({ cwd, args }: GeneratorOpts) => {
   const author = email && username ? `${username} <${email}>` : '';
   const target = name ? join(cwd, name) : cwd;
   const version = pkg.version;
-  const base = '/hbc/';
-  const publicPath = '/hbc/';
-  const appId = 'hbc';
+  let base = '';
+  let publicPath = '';
+  let appId = '';
+  const { text, intro, outro } = clackPrompts;
+
+  const inputBase = async () => {
+    base = (await text({
+      message: '请输入路由前缀(例如/hbc/)',
+      validate: (value) => {
+        if (!value?.length) {
+          return '请输入路由前缀';
+        }
+        if (value) {
+          // 正则验证value是否符合/demo/
+          const reg = /^\/[a-zA-Z0-9]+\/$/;
+          if (!reg.test(value)) {
+            return '请输入正确的路由前缀';
+          }
+        }
+      },
+      initialValue: '/',
+    })) as string;
+  };
+
+  const inputPublishPath = async () => {
+    publicPath = (await text({
+      message: '请输入publicPath(例如/hbc/)',
+      validate: (value) => {
+        if (!value?.length) {
+          return '请输入publicPath';
+        }
+        if (value) {
+          // 正则验证value是否符合/demo/
+          const reg = /^\/[a-zA-Z0-9]+\/$/;
+          if (!reg.test(value)) {
+            return '请输入正确的publicPath';
+          }
+        }
+      },
+      initialValue: base,
+    })) as string;
+  };
+
+  const inputAppId = async () => {
+    appId = (await text({
+      message: '请输入appId(例如hbc)',
+      validate: (value) => {
+        if (!value?.length) {
+          return '请输入appId';
+        }
+        if (value) {
+          // 正则验证value是否符合 数字字母组合
+          const reg = /^[a-zA-Z0-9]+$/;
+          if (!reg.test(value)) {
+            return '请输入正确的appId';
+          }
+        }
+      },
+      initialValue: '',
+    })) as string;
+  };
+
+  // prompts
+  const internalTemplatePrompts = async () => {
+    intro(chalk.bgHex('#19BDD2')(' create-hbc '));
+
+    await inputBase();
+    await inputPublishPath();
+    await inputAppId();
+
+    outro(chalk.green(`You're all set!`));
+  };
+
+  await internalTemplatePrompts();
 
   // git
   const shouldInitGit = args.git !== false;
