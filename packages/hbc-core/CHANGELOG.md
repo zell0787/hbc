@@ -1,5 +1,11 @@
 # hbc-core
 
+## 0.2.0-beta.7
+
+### Minor Changes
+
+- beta
+
 ## 0.1.1-alpha.6
 
 ### Patch Changes

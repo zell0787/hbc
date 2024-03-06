@@ -1,12 +1,13 @@
 {
   "mode": "pre",
-  "tag": "alpha",
+  "tag": "beta",
   "initialVersions": {
-    "create-hbc": "0.1.0",
-    "hbc-core": "0.1.0"
+    "create-hbc": "0.1.1-alpha.6",
+    "hbc-core": "0.1.1-alpha.6"
   },
   "changesets": [
     "great-bees-carry",
+    "itchy-trains-crash",
     "kind-deers-collect",
     "loud-pants-care",
     "red-stingrays-fly",
