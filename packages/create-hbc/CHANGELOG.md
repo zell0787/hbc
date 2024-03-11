@@ -1,5 +1,21 @@
 # create-hbc
 
+## 0.2.0
+
+### Minor Changes
+
+- 089a769: beta
+
+### Patch Changes
+
+- 8ad3fd7: alpha.2
+- 99c580f: alhpa.5
+- 3d11734: alpha.3
+- f59accf: alpha.4
+- ba73442: alhpa.6
+- 8cc1710: alpha.1 默认模板新增antd5依赖，完善创建项目
+- 5021b83: alhpa.0
+
 ## 0.2.0-beta.7
 
 ### Minor Changes
