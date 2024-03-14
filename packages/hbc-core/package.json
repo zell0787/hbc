@@ -11,19 +11,13 @@
     "bin",
     "dist",
     "index.d.ts",
-    "index.js",
-    "prettier.js",
-    "eslint.js",
-    "stylelint.js"
+    "index.js"
   ],
   "scripts": {
     "build": "pnpm tsc"
   },
   "dependencies": {
-    "umi": "4.1.2",
-    "@umijs/lint": "4.1.2",
-    "eslint": "8.35.0",
-    "stylelint": "14.8.2"
+    "umi": "4.1.2"
   },
   "engines": {
     "node": ">=14"

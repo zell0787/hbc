@@ -1,1 +1,5 @@
-module.exports = require('hbc-core/prettier');
+const prettierSettings = require('@hbcjs/plugins/prettier');
+
+module.exports = {
+  ...prettierSettings.
+}

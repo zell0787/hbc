@@ -29,6 +29,12 @@ importers:
 
   packages/hbc-core:
     dependencies:
+      umi:
+        specifier: 4.1.2
+        version: 4.1.2(@babel/core@7.23.9)(@types/node@20.11.20)(eslint@8.35.0)(prettier@3.2.5)(react-dom@18.2.0)(react@18.2.0)(stylelint@14.8.2)(typescript@5.3.3)(webpack@5.90.3)
+
+  packages/plugins:
+    dependencies:
       '@umijs/lint':
         specifier: 4.1.2
         version: 4.1.2(eslint@8.35.0)(stylelint@14.8.2)(typescript@5.3.3)
@@ -38,15 +44,6 @@ importers:
       stylelint:
         specifier: 14.8.2
         version: 14.8.2
-      umi:
-        specifier: 4.1.2
-        version: 4.1.2(@babel/core@7.23.9)(@types/node@20.11.20)(eslint@8.35.0)(prettier@3.2.5)(react-dom@18.2.0)(react@18.2.0)(stylelint@14.8.2)(typescript@5.3.3)(webpack@5.90.3)
-
-  packages/plugins:
-    dependencies:
-      '@umijs/utils':
-        specifier: ~4.1.2
-        version: 4.1.2
       umi:
         specifier: 4.1.2
         version: 4.1.2(@babel/core@7.23.9)(@types/node@20.11.20)(eslint@8.35.0)(prettier@3.2.5)(react-dom@18.2.0)(react@18.2.0)(stylelint@14.8.2)(typescript@5.3.3)(webpack@5.90.3)

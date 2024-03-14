@@ -1,3 +1,3 @@
 module.exports = {
-  extends: require.resolve('hbc-core/stylelint'),
+  extends: require.resolve('@hbcjs/plugins/stylelint'),
 };
