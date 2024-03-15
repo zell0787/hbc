@@ -1,3 +1,3 @@
 module.exports = {
-  extends: require.resolve('@hbcjs/plugins/eslint'),
+  extends: require.resolve('@hbcjs/lint/eslint'),
 };

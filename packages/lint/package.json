@@ -1,19 +1,12 @@
 {
-  "name": "@hbcjs/plugins",
-  "version": "0.3.0",
-  "description": "@hbcjs/plugins",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "name": "@hbcjs/lint",
+  "version": "0.1.0",
+  "description": "@hbcjs/lint",
   "files": [
-    "dist",
-    "libs",
     "prettier.js",
     "eslint.js",
     "stylelint.js"
   ],
-  "scripts": {
-    "build": "pnpm tsc"
-  },
   "dependencies": {
     "umi": "4.1.2",
     "@umijs/lint": "4.1.2",

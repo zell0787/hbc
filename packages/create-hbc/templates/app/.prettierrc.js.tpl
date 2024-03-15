@@ -1,5 +1,5 @@
-const prettierSettings = require('@hbcjs/plugins/prettier');
+const prettierSettings = require('@hbcjs/lint/prettier');
 
 module.exports = {
-  ...prettierSettings.
+  ...prettierSettings
 }

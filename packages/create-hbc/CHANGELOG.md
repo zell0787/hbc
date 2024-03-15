@@ -1,5 +1,11 @@
 # create-hbc
 
+## 0.4.0
+
+### Minor Changes
+
+- update
+
 ## 0.3.0
 
 ### Minor Changes

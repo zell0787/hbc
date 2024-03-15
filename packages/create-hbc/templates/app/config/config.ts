@@ -4,6 +4,7 @@ import { base, publicPath } from './constants';
 import { proxy } from './proxy';
 
 export default defineConfig({
+  plugins: ['@hbcjs/lint'],
   base,
   publicPath,
   routes,
