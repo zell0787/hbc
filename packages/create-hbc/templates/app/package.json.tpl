@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "hbc-core": "{{{ version }}}",
+    "@hbcjs/request": "0.1.0",
     "antd": "^5.14.0",
     "@ant-design/icons": "^5.0.1",
     "lodash": "^4.17.21"
