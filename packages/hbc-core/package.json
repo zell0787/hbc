@@ -1,6 +1,6 @@
 {
   "name": "hbc-core",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "hbc",
   "bin": {
     "hbc": "bin/hbc.js"
